@@ -12,10 +12,10 @@ from jmsource import jmsource
 from . import hmention, reply_id
 
 PING_PIC = os.environ.get("PING_PIC") or (
-    "https://graph.org/file/502a2c9751c3c06222c51.jpg"
+    "https://graph.org/file/a6ebfaa459ba00698ff86.mp4"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "مـن لا يتعلم من الماضي لا يرحمه المستقبل  . 🖤"
+JM_TXT = os.environ.get("PING_TEXT") or "- كـن عـزيـزاً غـائـبـاً ولا تـكن حـاظـࢪ بـلا قيـمة ."
 
 
 @jmsource.ar_cmd(pattern="بنك$")
