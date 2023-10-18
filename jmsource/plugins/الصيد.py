@@ -108,11 +108,11 @@ def gen_user(choice):
 async def _(event):
     await event.edit(
         """
-أوامر الصيد الخاصة بسورس جمثون : 
+أوامر الصيد الخاصة بسورس 𝗚𝗥 : 
 
 ٴ— — — — — — — — — —
 
-النوع :(  سداسي حرفين/ ثلاثيات/ سداسيات/ بوتات/ خماسي حرفين/خماسي /سباعيات )
+النوع :(  سداسي حرفين/ ثلاثيات/ سداسيات/ بوتات/ خماسي حرفين/خماسي /سباعيات /تيست )
 
 الامر:  `.صيد` + النوع
 - يقوم بصيد معرفات عشوائية حسب النوع
@@ -124,10 +124,13 @@ async def _(event):
 الامر:   `.حالة الصيد`
 • لمعرفة عدد المحاولات للصيد
 
+الامر:  `.ايقاف الصيد`
+•لأيقاف الصيد
+
 الامر:  `.حالة التثبيت`
 • لمعرفة عدد المحاولات للصيد
 
-@jmthon  - channle userbot 
+@G_Rthon  - channle userbot 
 
 """
     )
@@ -140,8 +143,8 @@ async def hunterusername(event):
     try:
         ch = await jmsource(
             functions.channels.CreateChannelRequest(
-                title="JMTHON HUNTER - صيد جمثون",
-                about="This channel to hunt username by - @jmthon ",
+                title="𝗚𝗥 𝗛𝗨𝗡𝗧𝗘𝗥 - صيد 𝗚𝗥",
+                about="This channel to hunt username by - @G_Rthon ",
             )
         )
         ch = ch.updates[1].channel_id
@@ -169,20 +172,20 @@ async def hunterusername(event):
                 )
                 await event.client.send_file(
                     event.chat_id,
-                    "https://t.me/jmthongif/2",
-                    caption="🐊 jmthon the best 🐊\n- - - - - - - - - - - - - - - - - - - - - - - -\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Type: {}\n- Save: ❲ Chaneel ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nThE KiNgS ❲ @jmthon - @R0R77 ❳ ".format(
+                    "https://t.me/GRGGB/2",
+                    caption=" [الأفضل](t.me/G_Rthon)\n- - - - - - - - - - - - - - - - - - - - - - - -\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nBy ❲ @G_Rthon ❳  ".format(
                         username, trys, choice
                     ),
                 )
                 await event.client.send_file(
                     ch,
-                    "https://t.me/jmthongif/2",
-                    caption="🐊 jmthon the best 🐊\n- - - - - - - - - - - - - - - - - - - - - - - -\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Type: {}\n- Save: ❲ Chaneel ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nThE KiNgS ❲ @jmthon - @R0R77 ❳ ".format(
+                    "https://t.me/GRGGB/2",
+                    caption=" [الأفضل](t.me/G_Rthon)\n- - - - - - - - - - - - - - - - - - - - - - - -\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nBy ❲ @G_Rthon ❳ ".format(
                         username, trys, choice
                     ),
                 )
                 await event.client.send_message(
-                    "@r0r77", f"- Done : @{username} !\n- By : @R0R77 - @JMTHON !"
+                    "@GR_OFFBoT", f"- Done : @{username} !\n- By : @G_Rthon !"
                 )
                 sedmod = False
                 break
@@ -228,8 +231,8 @@ async def _(event):
         try:
             ch = await jmsource(
                 functions.channels.CreateChannelRequest(
-                    title="JMTHON HUNTER - تثبيت جمثون",
-                    about="This channel to hunt username by - @jmthon ",
+                    title="𝗚𝗥 𝗛𝗨𝗡𝗧𝗘𝗥 - تثبيت 𝗚𝗥",
+                    about="This channel to hunt username by - @G_Rthon ",
                 )
             )
             ch = ch.updates[1].channel_id
@@ -254,21 +257,21 @@ async def _(event):
                 )
                 await event.client.send_file(
                     ch,
-                    "https://t.me/jmthongif/2",
-                    caption="🐊 jmthon the best 🐊\n- - - - - - - - - - - - - - - - - - - - - - - -\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Save: ❲ Chaneel ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nThE KiNgS ❲ @jmthon - @R0R77 ❳ ".format(
+                    "https://t.me/GRGGB/2",
+                    caption=" [الأفضل](t.me/G_Rthon)\n- - - - - - - - - - - - - - - - - - - - - - - -\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nBy ❲ @G_Rthon ❳ ".format(
                         username, trys2
                     ),
                 )
                 await event.client.send_file(
                     event.chat_id,
-                    "https://t.me/jmthongif/2",
-                    caption="🐊 jmthon the best 🐊\n- - - - - - - - - - - - - - - - - - - - - - - -\n- UserName: ❲ @{} ❳\n- ClickS: ❲ {} ❳\n- Save: ❲ Chaneel ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nThE KiNgS ❲ @jmthon - @R0R77 ❳ ".format(
+                    "https://t.me/GRGGB/2",
+                    caption=" [الأفضل](t.me/G_Rthon)\n- - - - - - - - - - - - - - - - - - - - - - - -\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nBy ❲ @G_Rthon ❳ ".format(
                         username, trys2
                     ),
                 )
                 await event.client.send_message(
-                    "@r0r77",
-                    f"- Done : @{username} !\n- By : @R0R77 - @JMTHON !\n- Hunting Log {trys2}",
+                    "@GR_OFFBoT",
+                    f"- Done : @{username} !\n- By : @G_Rthon !\n- Hunting Log {trys2}",
                 )
                 swapmod = False
                 break
