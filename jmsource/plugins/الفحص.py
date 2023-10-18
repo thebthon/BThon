@@ -21,7 +21,7 @@ from ..sql_helper.globals import gvarstatus
 from . import mention
 
 
-@jmsource.ar_cmd(pattern="فحص$")
+@jmsource.ar_cmd(pattern="السورس$")
 async def amireallyalive(event):
     reply_to_id = await reply_id(event)
     ANIME = None
@@ -36,7 +36,7 @@ async def amireallyalive(event):
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**سورس جمثون يعمل بنجاح**"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**سورس 𝗚𝗥 يعمل بنجاح**"
     JMTHON_IMG = gvarstatus("ALIVE_PIC")
     caption = jmthon_caption.format(
         ALIVE_TEXT=ALIVE_TEXT,
@@ -73,7 +73,7 @@ async def amireallyalive(event):
 temp = """{ALIVE_TEXT}
 **{EMOJI} قاعدة البيانات :** `{dbhealth}`
 **{EMOJI} اصدار التيليثون:** `{telever}`
-**{EMOJI} اصدار جمثون :** `{jmver}`
+**{EMOJI} اصدار 𝗚𝗥 :** `{jmver}`
 **{EMOJI} اصدار البايثون :** `{pyver}`
 **{EMOJI} الوقت :** `{uptime}`
 **{EMOJI} المالك:** {mention}"""
@@ -81,30 +81,30 @@ temp = """{ALIVE_TEXT}
 
 def jmthonalive_text():
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  ✥ "
-    jmthon_caption = "**سورس جمثون يعمل بنجاح**\n"
+    jmthon_caption = "**سورس 𝗚𝗥 يعمل بنجاح**\n"
     jmthon_caption += f"**{EMOJI} اصدار التيليثون :** `{version.__version__}\n`"
-    jmthon_caption += f"**{EMOJI} اصدار جمثون :** `{jmthonversion}`\n"
+    jmthon_caption += f"**{EMOJI} اصدار 𝗚𝗥 :** `{jmthonversion}`\n"
     jmthon_caption += f"**{EMOJI} اصدار البايثون :** `{python_version()}\n`"
     jmthon_caption += f"**{EMOJI} المالك:** {mention}\n"
     return jmthon_caption
 
 
-@jmsource.ar_cmd(pattern="السورس$")
+@jmsource.ar_cmd(pattern="فحص$")
 async def repo(event):
     RR7PP = Config.TG_BOT_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await jmsource.inline_query(RR7PP, "السورس")
+    response = await jmsource.inline_query(RR7PP, "فحص")
     await response[0].click(event.chat_id)
     await event.delete()
 
 
-ROZ_PIC = "https://graph.org/file/5f6ef13851dcf0d6fc72b.jpg"
+ROZ_PIC = "https://graph.org/file/51639b7543597b782972a.mp4"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
-    f"**⌯︙بوت جمثـون يعمل بنجاح 🤍،**\n"
+    f"**⌯︙بوت 𝗚𝗥 يعمل بنجاح 🤍،**\n"
     f"**   - اصدار التليثون :** `1.23.0\n`"
-    f"**   - اصدار جمثون :** `4.0.0`\n"
+    f"**   - اصدار 𝗚𝗥 :** `4.0.0`\n"
     f"**   - البوت المستخدم :** `{RAZAN}`\n"
     f"**   - اصدار البايثون :** `3.9.6\n`"
     f"**   - المستخدم :** {mention}\n"
@@ -118,11 +118,11 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         result = None
         query = event.text
         await jmsource.get_me()
-        if query.startswith("السورس") and event.query.user_id == jmsource.uid:
+        if query.startswith("فحص") and event.query.user_id == jmsource.uid:
             buttons = [
                 [
-                    Button.url("قنـاة السـورس ⚙️", "https://t.me/JMTHON"),
-                    Button.url("المطـور 👨🏼‍💻", "https://t.me/R0R77"),
+                    Button.url("قنـاة السـورس ⚙️", "https://t.me/G_Rthon"),
+                    Button.url("المطـور 👨🏼‍💻", "https://t.me/e_x_e"),
                 ]
             ]
             if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
