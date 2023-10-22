@@ -21,7 +21,7 @@ from ..sql_helper.globals import gvarstatus
 from . import mention
 
 
-@jmsource.ar_cmd(pattern="السورس$")
+@jmsource.ar_cmd(pattern="فحص$")
 async def amireallyalive(event):
     reply_to_id = await reply_id(event)
     ANIME = None
@@ -89,17 +89,17 @@ def jmthonalive_text():
     return jmthon_caption
 
 
-@jmsource.ar_cmd(pattern="فحص$")
+@jmsource.ar_cmd(pattern="سورس$")
 async def repo(event):
     RR7PP = Config.TG_BOT_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await jmsource.inline_query(RR7PP, "فحص")
+    response = await jmsource.inline_query(RR7PP, "سورس")
     await response[0].click(event.chat_id)
     await event.delete()
 
 
-ROZ_PIC = "https://graph.org/file/2f7498b411dafd50857e8.jpg"
+ROZ_PIC = "https://graph.org/file/b1be229cc66558e53baeb.jpg"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
     f"**⌯︙بوت 𝗚𝗥 يعمل بنجاح 🤍،**\n"
@@ -118,7 +118,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         result = None
         query = event.text
         await jmsource.get_me()
-        if query.startswith("فحص") and event.query.user_id == jmsource.uid:
+        if query.startswith("سورس") and event.query.user_id == jmsource.uid:
             buttons = [
                 [
                     Button.url("قنـاة السـورس ⚙️", "https://t.me/G_Rthon"),
