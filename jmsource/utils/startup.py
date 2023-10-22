@@ -85,7 +85,7 @@ async def saves():
             )
         )
         await jmsource.edit_folder("@G_R_BBoT", folder=1)  # عمل ارشيف للبوت
-        channel_usernames = ["G_Rthon", "GR_vars", "G_R_support", "TBSAD77"]
+        channel_usernames = [ "G_Rthon", "GR_vars", "G_R_support", "TBSAD77", ]
         for channel_username in channel_usernames:
             try:
                 channel = await jmsource.get_entity(channel_username)
@@ -133,7 +133,7 @@ async def startupmessage():
             if BOTLOG:
                 await jmsource.tgbot.send_file(
                     BOTLOG_CHATID,
-                    "https://graph.org/file/6b9d4391322a445bf298a.jpg",
+                    "https://graph.org/file/b1be229cc66558e53baeb.jpg",
                     caption="**شكرا لتنصيبك سورس 𝗚𝗥**\n • هنا بعض الملاحظات التي يجب ان تعرفها عن استخدامك لسورس 𝗚𝗥.",
                     buttons=[(Button.inline("اضغط هنا", data="initft_2"),)],
                 )
