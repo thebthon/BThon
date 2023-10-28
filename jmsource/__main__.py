@@ -19,7 +19,7 @@ from .utils import (
     verifyLoggerGroup,
 )
 
-LOGS = logging.getLogger("سورس 𝗚𝗥")
+LOGS = logging.getLogger("سورس بيثون")
 
 cmdhr = Config.COMMAND_HAND_LER
 
@@ -51,7 +51,7 @@ except Exception as meo:
 
 async def startup_process():
     if jmsource.uid in blacklisted_users:
-        LOGS.info("انت لا يمكنك تنصيب سورس 𝗚𝗥 عزيزي دي")
+        LOGS.info("انت لا يمكنك تنصيب سورس بيثون عزيزي دي")
         return
     if not gvarstatus("TNSEEB"):
         try:
@@ -62,7 +62,7 @@ async def startup_process():
             LOGS.info("تم انتهاء عملية التنصيب بنجاح")
             LOGS.info(
                 f"لمعرفة اوامر السورس ارسل {cmdhr}الاوامر\
-                \nمجموعة قناة السورس  https://t.me/G_R_support"
+                \nمجموعة قناة السورس  https://t.me/BThon_Support"
             )
             LOGS.info("============================================================")
             await verifyLoggerGroup()
@@ -75,9 +75,9 @@ async def startup_process():
             LOGS.info(str(e))
             return
     else:
-        LOGS.info("انت لا يمكنك تنصيب سورس 𝗚𝗥 عزيزي دي")
-        LOGS.info("انت لا يمكنك تنصيب سورس 𝗚𝗥 عزيزي دي")
-        LOGS.info("انت لا يمكنك تنصيب سورس 𝗚𝗥 عزيزي دي")
+        LOGS.info("انت لا يمكنك تنصيب سورس بيثون عزيزي دي")
+        LOGS.info("انت لا يمكنك تنصيب سورس بيثون عزيزي دي")
+        LOGS.info("انت لا يمكنك تنصيب سورس بيثون عزيزي دي")
 
 
 jmsource.loop.run_until_complete(startup_process())
