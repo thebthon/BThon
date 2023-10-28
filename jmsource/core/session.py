@@ -7,7 +7,7 @@ from .bothseesion import bothseesion
 from .client import JmthonClient
 from .logger import logging
 
-LOGS = logging.getLogger("سورس 𝗚𝗥")
+LOGS = logging.getLogger("سورس بيثون")
 __version__ = "2.10.6"
 
 loop = None
