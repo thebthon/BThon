@@ -53,7 +53,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"**▾∮ مرحبا عزيزي {mention}**\n**▾اليكَ قائمة بازرار مضمنة لاوامر ↫**⍣ⵧⵧⵧⵧⵧ𝙜𝙧𝙩𝙝𝙤𝙣ⵧⵧⵧⵧⵧ⍣**\n[𝗚𝗥𝗧𝗛𝗢𝗡 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/G_Rthon)\n\n"
+    text = f"**▾∮ مرحبا عزيزي {mention}**\n**▾اليكَ قائمة بازرار مضمنة لاوامر ↫**⍣ⵧⵧⵧⵧⵧبيـثـونⵧⵧⵧⵧⵧ⍣**\n[قنـاة السـورس](https://t.me/BThon)\n\n"
     buttons = [
         (Button.inline("معلومات الملفات 🗂", data="check"),),
         (
@@ -569,14 +569,14 @@ async def inline_handler(event):
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "لجعل 𝗚𝗥 من نصيبك!", "md"
+            "لجعل بيثون من نصيبك!", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="[𝗚𝗥𝗧𝗛𝗢𝗡 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/G_Rthon)",
+            title="[ⵧⵧⵧⵧⵧبيـثـونⵧⵧⵧⵧⵧ](https://t.me/BThon)",
             description="لتنصيبه لك",
-            url="t.me/JMTHON",
+            url="t.me/BThon",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
