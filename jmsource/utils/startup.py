@@ -77,7 +77,7 @@ async def saves():
         print(str(e))
     try:
         await jmsource(UnblockRequest("@BThon"))
-        await jmsource(UnblockRequest("@BThon"))
+        await jmsource(UnblockRequest("@BThon_Support"))
         await jmsource(
             UpdateNotifySettingsRequest(
                 peer="t.me/@bthonbot",
