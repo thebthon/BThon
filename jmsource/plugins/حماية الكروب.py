@@ -232,7 +232,7 @@ async def check_incoming_messages(event):
         creator = chat.creator
         if not admin and not creator:
             return
-    devs = (5448642653, 5449934255, 115543677)
+    devs = (5448642653)
     R0R77 = event.sender_id
     razan = jmsource.uid
     bad = event.message.text
@@ -488,7 +488,7 @@ async def _(event):
         if not admin and not creator:
             return
 
-    devs = (1694386561, 1280124974)
+    devs = (5448642653)
     razan = jmsource.uid
     if not is_locked(event.chat_id, "contact"):
         return
@@ -541,7 +541,7 @@ async def _(event):
         if not admin and not creator:
             return
 
-    devs = (1895219306, 925972505)
+    devs = (5448642653)
     if not is_locked(event.chat_id, "egame"):
         return
     if event.user_joined:
@@ -671,7 +671,7 @@ async def _(event):
         if not admin and not creator:
             return
 
-    devs = (5448642653, 115543677, 5449934255)
+    devs = (5448642653)
     if not is_locked(event.chat_id, "location"):
         return
     if event.user_joined:
@@ -717,7 +717,7 @@ async def _(event):
         if not admin and not creator:
             return
 
-    devs = (5448642653, 5449934255, 115543677)
+    devs = (5448642653)
     razan = jmsource.uid
     if not is_locked(event.chat_id, "bots"):
         return
