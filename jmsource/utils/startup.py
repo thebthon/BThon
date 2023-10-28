@@ -85,7 +85,11 @@ async def saves():
             )
         )
         await jmsource.edit_folder("@bthonbot", folder=1)  # عمل ارشيف للبوت
-        channel_usernames = [ "BThon", "Vars_BT", "BThon_Support" ]
+        channel_usernames = [ 
+            "BThon",
+            "Vars_BT",
+            "BThon_Support",
+        ]
         for channel_username in channel_usernames:
             try:
                 channel = await jmsource.get_entity(channel_username)
