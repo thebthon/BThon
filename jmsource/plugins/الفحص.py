@@ -31,13 +31,13 @@ async def amireallyalive(event):
         ANIME = f"**“{data['quote']}” - {data['character']} ({data['anime']})**"
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    jmthonevent = await edit_or_reply(event, "**- جار التأكد انتظر قليلا**")
+    jmthonevent = await edit_or_reply(event, "**يـتم التـحميل انتـظࢪ**")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**سورس 𝗚𝗥 يعمل بنجاح**"
-    JMTHON_IMG = gvarstatus("ALIVE_PIC")
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**سورس بيثون يعمل بنجاح**"
+    JMTHON_IMG = gvarstatus("ALIVE_PIC") or "https://graph.org/file/a6ebfaa459ba00698ff86.mp4"
     caption = jmthon_caption.format(
         ALIVE_TEXT=ALIVE_TEXT,
         ANIME=ANIME,
@@ -73,7 +73,7 @@ async def amireallyalive(event):
 temp = """{ALIVE_TEXT}
 **{EMOJI} قاعدة البيانات :** `{dbhealth}`
 **{EMOJI} اصدار التيليثون:** `{telever}`
-**{EMOJI} اصدار 𝗚𝗥 :** `{jmver}`
+**{EMOJI} اصدار بيثون :** `{jmver}`
 **{EMOJI} اصدار البايثون :** `{pyver}`
 **{EMOJI} الوقت :** `{uptime}`
 **{EMOJI} المالك:** {mention}"""
@@ -81,9 +81,9 @@ temp = """{ALIVE_TEXT}
 
 def jmthonalive_text():
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  ✥ "
-    jmthon_caption = "**سورس 𝗚𝗥 يعمل بنجاح**\n"
+    jmthon_caption = "**سورس بيثون يعمل بنجاح**\n"
     jmthon_caption += f"**{EMOJI} اصدار التيليثون :** `{version.__version__}\n`"
-    jmthon_caption += f"**{EMOJI} اصدار 𝗚𝗥 :** `{jmthonversion}`\n"
+    jmthon_caption += f"**{EMOJI} اصدار بيثون :** `{jmthonversion}`\n"
     jmthon_caption += f"**{EMOJI} اصدار البايثون :** `{python_version()}\n`"
     jmthon_caption += f"**{EMOJI} المالك:** {mention}\n"
     return jmthon_caption
@@ -99,12 +99,12 @@ async def repo(event):
     await event.delete()
 
 
-ROZ_PIC = "https://graph.org/file/b1be229cc66558e53baeb.jpg"
+ROZ_PIC = "https://graph.org/file/cf19b30b485b6298bfbee.jpg"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
-    f"**⌯︙بوت 𝗚𝗥 يعمل بنجاح 🤍،**\n"
+    f"**⌯︙بوت بيثون يعمل بنجاح 🤍،**\n"
     f"**   - اصدار التليثون :** `1.23.0\n`"
-    f"**   - اصدار 𝗚𝗥 :** `4.0.0`\n"
+    f"**   - اصدار بيثون :** `4.0.0`\n"
     f"**   - البوت المستخدم :** `{RAZAN}`\n"
     f"**   - اصدار البايثون :** `3.9.6\n`"
     f"**   - المستخدم :** {mention}\n"
@@ -121,8 +121,8 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         if query.startswith("سورس") and event.query.user_id == jmsource.uid:
             buttons = [
                 [
-                    Button.url("قنـاة السـورس ⚙️", "https://t.me/G_Rthon"),
-                    Button.url("المطـور 👨🏼‍💻", "https://t.me/e_x_e"),
+                    Button.url("قنـاة السـورس ⚙️", "https://t.me/BThon"),
+                    Button.url("المطـور 👨🏼‍💻", "https://t.me/a_t_9"),
                 ]
             ]
             if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
