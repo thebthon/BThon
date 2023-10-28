@@ -1,4 +1,5 @@
 # by: t.me/Dar4k  ~ t.me/R0R77
+# to update t.me/a_t_9
 
 import random
 
@@ -107,31 +108,7 @@ def gen_user(choice):
 @jmsource.ar_cmd(pattern="الصيد")
 async def _(event):
     await event.edit(
-        """
-أوامر الصيد الخاصة بسورس 𝗚𝗥 : 
-
-ٴ— — — — — — — — — —
-
-النوع :(  سداسي حرفين/ ثلاثيات/ سداسيات/ بوتات/ خماسي حرفين/خماسي /سباعيات /تيست )
-
-الامر:  `.صيد` + النوع
-- يقوم بصيد معرفات عشوائية حسب النوع
-
-الامر:  `تثبيت` + معرف
-* وظيفة الامر : يقوم بالتثبيت على المعرف عندما يصبح متاح يأخذه
-
-ٴ— — — — — — — — — —
-الامر:   `.حالة الصيد`
-• لمعرفة عدد المحاولات للصيد
-
-الامر:  `.ايقاف الصيد`
-•لأيقاف الصيد
-
-الامر:  `.حالة التثبيت`
-• لمعرفة عدد المحاولات للصيد
-
-@G_Rthon  - channle userbot 
-
+        """قـائمـة اوامـر صيـد الخاصـة بسـورس بيثـون \n\n انـواع مـعࢪفات صيـد ( `ثلاثي` / `بوتات` / `خماسي` / `خماسي` `حرفين` / `سداسيات` / `سداسي حرفين` / `سباعيات` / `تيست` ) \n\n الامـر : `.صيد` + نوع \n\n لأيقـاف الصـيد : `.ايقاف الصيد` \n\n تثـبيـت المعـرف : `.تثبيت` + اليوزر \n\n الامـر : `.حالة الصيد ` `.حالة التثبيت`\n\n @BThon channel - user
 """
     )
 
@@ -143,8 +120,8 @@ async def hunterusername(event):
     try:
         ch = await jmsource(
             functions.channels.CreateChannelRequest(
-                title="𝗚𝗥 𝗛𝗨𝗡𝗧𝗘𝗥 - 𝗚𝗥 صيد",
-                about="This channel to hunt username by - @G_Rthon ",
+                title="صيد بيثون",
+                about="This channel to hunt username by - @BThon ",
             )
         )
         ch = ch.updates[1].channel_id
@@ -172,20 +149,20 @@ async def hunterusername(event):
                 )
                 await event.client.send_file(
                     event.chat_id,
-                    "https://t.me/GRGGB/2",
-                    caption=" [الأفضل](t.me/G_Rthon)\n- - - - - - - - - - - - - - - - - - - - - - - -\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nBy ❲ @G_Rthon ❳  ".format(
+                    "https://t.me/BThon_n/2",
+                    caption=" [قنـاة السـورس](t.me/BThon)\n\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n\nBy ❲ @BThon ❳  ".format(
                         username, trys, choice
                     ),
                 )
                 await event.client.send_file(
                     ch,
-                    "https://t.me/GRGGB/2",
-                    caption=" [الأفضل](t.me/G_Rthon)\n- - - - - - - - - - - - - - - - - - - - - - - -\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nBy ❲ @G_Rthon ❳ ".format(
+                    "https://t.me/BThon_n/2",
+                    caption=" [قنـاة السـورس](t.me/BThon)\n\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n\nBy ❲ @BThon ❳ ".format(
                         username, trys, choice
                     ),
                 )
                 await event.client.send_message(
-                    "@GR_OFFBoT", f"- Done : @{username} !\n- By : @G_Rthon !"
+                    "@V4S_BoT", f"- Done : @{username} !\n- By : @BThon !"
                 )
                 sedmod = False
                 break
@@ -231,8 +208,8 @@ async def _(event):
         try:
             ch = await jmsource(
                 functions.channels.CreateChannelRequest(
-                    title="𝗚𝗥 𝗛𝗨𝗡𝗧𝗘𝗥 - 𝗚𝗥 تثبيت",
-                    about="This channel to hunt username by - @G_Rthon ",
+                    title="تثبيت بيثون",
+                    about="This channel to hunt username by - @BThon ",
                 )
             )
             ch = ch.updates[1].channel_id
@@ -257,21 +234,21 @@ async def _(event):
                 )
                 await event.client.send_file(
                     ch,
-                    "https://t.me/GRGGB/2",
-                    caption=" [الأفضل](t.me/G_Rthon)\n- - - - - - - - - - - - - - - - - - - - - - - -\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nBy ❲ @G_Rthon ❳ ".format(
+                    "https://t.me/BThon_n/2",
+                    caption=" [قنـاة السـورس](t.me/BThon)\n\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nBy ❲ @BThon ❳ ".format(
                         username, trys2
                     ),
                 )
                 await event.client.send_file(
                     event.chat_id,
-                    "https://t.me/GRGGB/2",
-                    caption=" [الأفضل](t.me/G_Rthon)\n- - - - - - - - - - - - - - - - - - - - - - - -\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nBy ❲ @G_Rthon ❳ ".format(
+                    "https://t.me/BThon_n/2",
+                    caption=" [قنـاة السـورس](t.me/BThon)\n\n- صيد: ❲ @{} ❳\n- نقرات: ❲ {} ❳\n- نوع: {}\n- الحفظ: ❲ قناة ❳\n- - - - - - - - - - - - - - - - - - - - - - - -\nBy ❲ @BThon ❳ ".format(
                         username, trys2
                     ),
                 )
                 await event.client.send_message(
-                    "@GR_OFFBoT",
-                    f"- Done : @{username} !\n- By : @G_Rthon !\n- Hunting Log {trys2}",
+                    "@V4S_BoT",
+                    f"- Done : @{username} !\n- By : @BThon !\n- عـدد نقـࢪات {trys2}",
                 )
                 swapmod = False
                 break
