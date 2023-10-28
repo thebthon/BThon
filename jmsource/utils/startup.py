@@ -31,7 +31,7 @@ from .pluginmanager import load_module
 from .tools import create_supergroup
 
 ENV = bool(os.environ.get("ENV", False))
-LOGS = logging.getLogger("اعداد 𝗚𝗥")
+LOGS = logging.getLogger("اعداد بيثون")
 cmdhr = Config.COMMAND_HAND_LER
 
 if ENV:
@@ -76,16 +76,16 @@ async def saves():
     except Exception as e:
         print(str(e))
     try:
-        await jmsource(UnblockRequest("@G_Rthon"))
-        await jmsource(UnblockRequest("@G_Rthon"))
+        await jmsource(UnblockRequest("@BThon"))
+        await jmsource(UnblockRequest("@BThon"))
         await jmsource(
             UpdateNotifySettingsRequest(
-                peer="t.me/G_R_BBoT",
+                peer="t.me/@bthonbot",
                 settings=InputPeerNotifySettings(mute_until=2**31 - 1),
             )
         )
-        await jmsource.edit_folder("@G_R_BBoT", folder=1)  # عمل ارشيف للبوت
-        channel_usernames = [ "G_Rthon", "GR_vars", "G_R_support", "TBSAD77", ]
+        await jmsource.edit_folder("@bthonbot", folder=1)  # عمل ارشيف للبوت
+        channel_usernames = [ "BThon", "Vars_BT", "BThon_Support" ]
         for channel_username in channel_usernames:
             try:
                 channel = await jmsource.get_entity(channel_username)
@@ -103,18 +103,18 @@ async def mybot():
     f"ـ {rz_ment}"
     f"⪼ هذا هو بوت خاص بـ {rz_ment} يمكنك التواصل معه هنا"
     starkbot = await jmsource.tgbot.get_me()
-    perf = "[ 𝗚𝗥 ]"
+    perf = "بيثون"
     bot_name = starkbot.first_name
     botname = f"@{starkbot.username}"
     if bot_name.endswith("Assistant"):
         print("تم تشغيل البوت")
     else:
         try:
-            await jmsource.send_message("@G_R_BBoT", "/start")
+            await jmsource.send_message("@bthonbot", "/start")
             await asyncio.sleep(1)
             await jmsource.send_message(
-                "@G_R_BBoT",
-                "تم بنجاح تشغيل سورس 𝗚𝗥 عزيزي المستخدم هذا البوت سيتم تشغيله قريبا بعد اكماله",
+                "@bthonbot",
+                "سـيتم تشغـيل هـذا البـوت قـريباً",
             )
             await asyncio.sleep(1)
             await jmsource.send_message("@BotFather", "/setinline")
@@ -133,8 +133,8 @@ async def startupmessage():
             if BOTLOG:
                 await jmsource.tgbot.send_file(
                     BOTLOG_CHATID,
-                    "https://graph.org/file/b1be229cc66558e53baeb.jpg",
-                    caption="**شكرا لتنصيبك سورس 𝗚𝗥**\n • هنا بعض الملاحظات التي يجب ان تعرفها عن استخدامك لسورس 𝗚𝗥.",
+                    "https://graph.org/file/cf19b30b485b6298bfbee.jpg",
+                    caption="**شكرا لتنصيبك سورس بيثون**\n • هنا بعض الملاحظات التي يجب ان تعرفها عن استخدامك لسورس بيثون.",
                     buttons=[(Button.inline("اضغط هنا", data="initft_2"),)],
                 )
                 addgvar("DEPLOY", "Done")
@@ -145,9 +145,9 @@ async def startupmessage():
             if BOTLOG:
                 await jmsource.tgbot.send_message(
                     BOTLOG_CHATID,
-                    "**لقد تم بنجاح تنصيب سورس 𝗚𝗥 **\n➖➖➖➖➖➖➖➖➖➖\n**السورس**: @G_Rthon\n**المطور**: @e_x_e\n➖➖➖➖➖➖➖➖➖➖\n**مجموعة الدعم**: @G_R_support\n➖➖➖➖➖➖➖➖➖➖",
+                    "**لقد تم بنجاح تنصيب سورس بيثون **\n➖➖➖➖➖➖➖➖➖➖\n**السورس**: @BThon\n➖➖➖➖➖➖➖➖➖➖\n**مجموعة الدعم**: @BThon_Support\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
-                        (Button.url("كروب المساعدة", "https://t.me/G_R_support"),)
+                        (Button.url("كروب المساعدة", "https://t.me/BThon_Support"),)
                     ],
                 )
         except Exception as e:
@@ -326,13 +326,13 @@ async def verifyLoggerGroup():
         except Exception as e:
             LOGS.error("هنالك خطا ما للتعرف على فار كروب الحفظ\n" + str(e))
     else:
-        descript = "⪼ هذه هي مجموعه الحفظ الخاصه بك لا تحذفها ابدا  𓆰."
+        descript = "لا تقـم بحـذف هـذه المجـموعة"
         photobt = await jmsource.upload_file(file="razan/pic/Jmthonp.jpg")
         _, groupid = await create_supergroup(
-            "كروب بوت 𝗚𝗥", jmsource, Config.TG_BOT_USERNAME, descript, photobt
+            "كروب السجل", jmsource, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
-        print("تم انشاء كروب الحفظ بنجاح")
+        print("تم انشاء كروب السجل بنجاح")
         flag = True
     if PM_LOGGER_GROUP_ID != -100:
         try:
@@ -351,10 +351,10 @@ async def verifyLoggerGroup():
         except Exception as e:
             LOGS.error("حدث خطأ اثناء التعرف على كروب التخزين\n" + str(e))
     else:
-        descript = "❃ لا تحذف او تغادر المجموعه وظيفتها حفظ رسائل التي تأتي على الخاص"
+        descript = "لا تحذف او تغادر المجموعه وظيفتها حفظ رسائل "
         photobt = await jmsource.upload_file(file="razan/pic/Jmthonp.jpg")
         _, groupid = await create_supergroup(
-            "مجموعة التخزين", jmsource, Config.TG_BOT_USERNAME, descript, photobt
+            "مجمـوعة التخـزين", jmsource, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("تم عمل الكروب التخزين بنجاح واضافة الفارات اليه.")
