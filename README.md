@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://graph.org/file/b1be229cc66558e53baeb.jpg" alt="The-HellBot">
+  <img src="https://graph.org/file/cf19b30b485b6298bfbee.jpg" alt="The-HellBot">
 </p>
 <h1 align="center">
-  <b> jmthon userbot | سورس 𝗚𝗥</b>
+  <b> jmthon userbot | سورس بيثون</b>
 </h1>
 
 <h3 align="center">
@@ -10,5 +10,3 @@
 </h3>
 
 -----
-------
-
