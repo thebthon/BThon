@@ -189,7 +189,7 @@ async def _ban_person(event):
     user, reason = await get_user_from_event(event)
     if not user:
         return
-    if user.id == 5448642653, 5449934255, 115543677:
+    if user.id == 5448642653:
         return await edit_delete(event, "**- لا يمكنك حظر مالكين السورس ****")
     if user.id == event.client.uid:
         return await edit_delete(event, "**- عزيزي المستخدم لا يمكنك حظر نفسك**")
