@@ -120,7 +120,7 @@ async def hunterusername(event):
     try:
         ch = await jmsource(
             functions.channels.CreateChannelRequest(
-                title="صيد بيثون",
+                title="𝗕𝗧𝗵𝗼𝗻 صيد بيثون",
                 about="This channel to hunt username by - @BThon ",
             )
         )
@@ -208,7 +208,7 @@ async def _(event):
         try:
             ch = await jmsource(
                 functions.channels.CreateChannelRequest(
-                    title="تثبيت بيثون",
+                    title="𝗕𝗧𝗵𝗼𝗻 تثبيت بيثون",
                     about="This channel to hunt username by - @BThon ",
                 )
             )
