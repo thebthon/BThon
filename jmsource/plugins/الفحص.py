@@ -36,7 +36,7 @@ async def amireallyalive(event):
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**سورس بيثون يعمل بنجاح**"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**سـورس بيثـون يعمـل بنـجاح**"
     JMTHON_IMG = gvarstatus("ALIVE_PIC") or "https://graph.org/file/a6ebfaa459ba00698ff86.mp4"
     caption = jmthon_caption.format(
         ALIVE_TEXT=ALIVE_TEXT,
@@ -71,12 +71,12 @@ async def amireallyalive(event):
 
 
 temp = """{ALIVE_TEXT}
-**{EMOJI} قاعدة البيانات :** `{dbhealth}`
-**{EMOJI} اصدار التيليثون:** `{telever}`
-**{EMOJI} اصدار بيثون :** `{jmver}`
-**{EMOJI} اصدار البايثون :** `{pyver}`
-**{EMOJI} الوقت :** `{uptime}`
-**{EMOJI} المالك:** {mention}"""
+**{EMOJI} المالك :** {mention}
+**{EMOJI} الوقت:** {uptime}
+**{EMOJI} اصدار التيليثون :** {telever}
+**{EMOJI} اصدار بيثون :** {jmver}
+**{EMOJI} اصدار البايثون :** {pyver}
+**{EMOJI} قاعدة البيانات:** {dbhealth}"""
 
 
 def jmthonalive_text():
