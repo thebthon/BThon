@@ -36,11 +36,11 @@ async def _(event):
         await edit_or_reply(event, "**```بالـرد على الرابـط ```**")
         return
     chat = "@CGBOT"
-    jmthonevent = await edit_or_reply(event, "** جـارِ التحميـل من تيـك تـوك انتظـر قليلاً  ... ╰**")
+    jmthonevent = await edit_or_reply(event, "** جـارِ التحميـل من تيـك تـوك انتظـر قليلاً  ... **")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=5448642653)
+                events.NewMessage(incoming=True, from_users=2035595446)
             )
             await event.client.forward_messages(chat, reply_message)
             response = await response
