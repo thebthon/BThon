@@ -35,7 +35,7 @@ async def _(event):
     if not reply_message.text:
         await edit_or_reply(event, "**```بالـرد على الرابـط ```**")
         return
-    chat = "@b_ubbot"
+    chat = "@CGBOT"
     jmthonevent = await edit_or_reply(event, "** جـارِ التحميـل من تيـك تـوك انتظـر قليلاً  ... ╰**")
     async with event.client.conversation(chat) as conv:
         try:
@@ -47,7 +47,7 @@ async def _(event):
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
             await jmthonevent.edit(
-                "**تحـقق من انـك لم تقـم بحظـر البوت @b_ubbot .. ثم اعـد استخدام الامـر ...**"
+                "**تحـقق من انـك لم تقـم بحظـر البوت @CGBOT .. ثم اعـد استخدام الامـر ...**"
             )
             return
         if response.text.startswith(""):
