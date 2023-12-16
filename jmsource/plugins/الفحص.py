@@ -37,7 +37,7 @@ async def amireallyalive(event):
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
     ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**سـورس بيثـون يعمـل بنـجاح**"
-    JMTHON_IMG = gvarstatus("ALIVE_PIC") or "https://graph.org/file/46dc2d3f67e56c84d6ce8.mp4"
+    JMTHON_IMG = gvarstatus("ALIVE_PIC") or "https://graph.org/file/1397a46e861351455b598.mp4"
     caption = jmthon_caption.format(
         ALIVE_TEXT=ALIVE_TEXT,
         ANIME=ANIME,
